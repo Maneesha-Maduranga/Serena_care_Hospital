@@ -11,7 +11,7 @@ function Navbar() {
   };
 
   return (
-    <section className='navbar  mx-3 md:mx-auto container  flex justify-between h-20 '>
+    <section className='fixed   flex justify-between h-20 bg-slate-50 w-full'>
       {/* Logo */}
       <div className='navbar-logo flex items-center cursor-pointer'>
         <img src={logo} alt='logo' className='w-10' />
@@ -34,7 +34,7 @@ function Navbar() {
 
       {/* Hamberger ICon */}
       <button
-        className='absolute top-5 right-0 lg:hidden'
+        className='absolute top-1 right-0 lg:hidden'
         onClick={toggleNavbar}
       >
         <img src={hamberger} alt='icon' className='w-10' />

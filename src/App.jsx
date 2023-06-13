@@ -1,6 +1,6 @@
 import Navbar from './Component/Navabar';
-import Hero from './Component/Hero';
-import About from './Component/About';
+import Hero from './Section/Hero';
+import About from './Section/About';
 
 function App() {
   return (
