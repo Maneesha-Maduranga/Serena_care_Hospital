@@ -1,4 +1,6 @@
 import Navbar from './Component/Navabar';
+import Hero from './Component/Hero';
+import About from './Component/About';
 
 function App() {
   return (
@@ -7,7 +9,8 @@ function App() {
         <Navbar />
       </header>
       <main>
-        <h1 className='text-3xl font-bold underline'>Hello world!</h1>
+        <Hero />
+        <About />
       </main>
 
       <footer>
