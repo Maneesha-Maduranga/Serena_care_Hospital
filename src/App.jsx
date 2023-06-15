@@ -1,6 +1,7 @@
 import Navbar from './Component/Navabar';
 import Hero from './Section/Hero';
 import About from './Section/About';
+import Service from './Section/Service';
 
 function App() {
   return (
@@ -11,11 +12,8 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Service />
       </main>
-
-      <footer>
-        <h1>Footer</h1>
-      </footer>
     </>
   );
 }

@@ -2,6 +2,7 @@ import medicalOne from '../assets/medicalOne.png';
 import medicalTwo from '../assets/medicalTwo.png';
 import medicalThree from '../assets/medicalThree.png';
 import BlockQuote from '../Component/BlockQuote';
+import AboutCard from '../Component/AboutCard';
 
 function About() {
   return (
@@ -33,10 +34,22 @@ function About() {
           </p>
         </div>
         {/* Section Two */}
-        <div className='flex flex-col items-center justify-start mt-0'>
-          <img src={medicalOne} alt='iconOne' className='w-40' />
-          <img src={medicalTwo} alt='iconTwo' className='w-40' />
-          <img src={medicalThree} alt='iconTwo' className='w-40' />
+        <div className='flex flex-col   md:flex-row items-center md:justify-between mt-0'>
+          <img
+            src={medicalOne}
+            alt='iconOne'
+            className='w-40  transition ease-in-out delay-150  hover:-translate-y-4 duration-300'
+          />
+          <img
+            src={medicalTwo}
+            alt='iconTwo'
+            className='w-40  transition ease-in-out delay-150  hover:-transalte-y-4 duration-300'
+          />
+          <img
+            src={medicalThree}
+            alt='iconTwo'
+            className='w-40  transition ease-in-out delay-150    hover:-translate-y-4 duration-300'
+          />
         </div>
 
         {/* Section Four */}
@@ -45,7 +58,17 @@ function About() {
         </div>
 
         {/* Section Four */}
-        <div className='card'>04</div>
+        <div className='mt-2  flex flex-col lg:flex-row'>
+          <div className='flex-none w-auto lg:w-60'>
+            <AboutCard bgColor='bg-lime-300' />
+          </div>
+          <div className='flex-none lg:grow'>
+            <AboutCard bgColor='bg-sky-400' />
+          </div>
+          <div className='flex-none w-auto lg:w-60'>
+            <AboutCard bgColor=' bg-green-500' />
+          </div>
+        </div>
       </div>
     </div>
   );

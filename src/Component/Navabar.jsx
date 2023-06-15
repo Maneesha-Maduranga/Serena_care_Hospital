@@ -1,7 +1,8 @@
-import logo from '../assets/medical.png';
-import hamberger from '../assets/hamberger.svg';
-import closeHamberger from '../assets/closeHamberger.svg';
 import { useState } from 'react';
+import NavbarLogo from './NavLogo';
+
+import { BsListNested } from 'react-icons/bs';
+import { IoClose } from 'react-icons/io5';
 
 function Navbar() {
   const [show, setShow] = useState(false);
@@ -11,18 +12,12 @@ function Navbar() {
   };
 
   return (
-    <section className='fixed   flex justify-between h-20 bg-slate-50 w-full'>
+    <section className='fixed flex justify-between items-center h-20 bg-slate-50 w-full drop-shadow-lg z-10'>
       {/* Logo */}
-      <div className='navbar-logo flex items-center cursor-pointer'>
-        <img src={logo} alt='logo' className='w-10' />
-        <div>
-          <div className='text-2xl '>MM Medical</div>
-        </div>
-      </div>
-      {/* Link */}
+      <NavbarLogo />
 
       {/* Large View */}
-      <ul className='hidden lg:grid grid-flow-col divide-x divide-sky-200  gap-4 content-center'>
+      <ul className='hidden lg:flex'>
         <li className='mr-3  text-base  hover:text-sky-400'>HOME</li>
         <li className='mr-3  text-base  hover:text-sky-400'>ABOUT</li>
         <li className='mr-3  text-base  hover:text-sky-400'>SERVICE</li>
@@ -33,39 +28,23 @@ function Navbar() {
       </ul>
 
       {/* Hamberger ICon */}
-      <button
-        className='absolute top-1 right-0 lg:hidden'
-        onClick={toggleNavbar}
-      >
-        <img src={hamberger} alt='icon' className='w-10' />
-      </button>
+      <div className='absolute top-7 right-5 lg:hidden' onClick={toggleNavbar}>
+        {!show ? <BsListNested size={28} /> : <IoClose size={28} />}
+      </div>
+
       {/* Small View */}
 
       <div
         className={
           show
-            ? 'flex-col absolute top-0 right-0 space-y-6  bg-white h-screen w-64  drop-shadow-md'
-            : 'hidden '
+            ? 'absolute left-0 top-0  bg-slate-50 w-2/5 h-screen ease-in-out duration-500'
+            : 'ease-in-out duration-500 fixed left-[-100%]'
         }
       >
-        {/* LOGO and CLOSE */}
-        <div className='flex items-center justify-evenly my-5'>
-          <div className='navbar-logo flex items-center'>
-            <img src={logo} alt='logo' className='w-10' />
-            <div>
-              <div className='text-2xl '>MM Medical</div>
-            </div>
-          </div>
-          <div>
-            <button onClick={toggleNavbar}>
-              <img src={closeHamberger} className='w-8' alt='close' />
-            </button>
-          </div>
-        </div>
-        {/* Links */}
-        <ul className='divide-y divide-sky-200'>
-          <li className=' ml-4 mt-5  text-base  hover:text-sky-400'>HOME</li>
-          <li className=' ml-4 mt-4  text-base  hover:text-sky-400'>ABOUT</li>
+        <ul className='mx-4 my-4  '>
+          <NavbarLogo />
+          <li className=' ml-4 mt-5  text-base   hover:text-sky-400'>HOME</li>
+          <li className=' ml-4 mt-4  text-base   hover:text-sky-400'>ABOUT</li>
           <li className=' ml-4 mt-4  text-base  hover:text-sky-400'>SERVICE</li>
           <li className=' ml-4 mt-4  text-base  hover:text-sky-400'>TEAM</li>
           <li className=' ml-4 mt-4  text-base  hover:text-sky-400'>
@@ -74,7 +53,9 @@ function Navbar() {
           <li className=' ml-4 mt-4  text-base  hover:text-sky-400'>
             TESTIMONIAL
           </li>
-          <li className=' ml-4 mt-4  text-base  hover:text-sky-400'>CONTACT</li>
+          <li className=' ml-4 mt-4  text-base   hover:text-sky-400'>
+            CONTACT
+          </li>
         </ul>
       </div>
     </section>
