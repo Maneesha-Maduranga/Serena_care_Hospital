@@ -6,7 +6,7 @@ import AboutCard from '../Component/AboutCard';
 
 function About() {
   return (
-    <div className='about container mx-auto px-10 my-10'>
+    <div className='about container mx-auto px-10 my-10' id='about'>
       <h1 className='font-semibold text-sky-400 text-xl'>About Us</h1>
       <div className='flex flex-col gap-8'>
         {/* Section One */}
@@ -15,11 +15,11 @@ function About() {
             Mission and Story About Our Medical
           </h1>
           <p className='mt-4 md:mt-2'>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
-            consequat.
+            At [Hospital Name], we are committed to providing exceptional
+            healthcare services to our patients. With state-of-the-art
+            facilities, advanced medical technology, and a dedicated team of
+            healthcare professionals, we strive to deliver the highest quality
+            care and ensure the well-being of our patients.
           </p>
           <p className='mt-4 md:mt-3'>
             Medical was started in the year 1995 as a small private dental

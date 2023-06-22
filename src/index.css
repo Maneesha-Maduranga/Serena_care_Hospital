@@ -7,8 +7,12 @@
 
 @layer base {
     html {
-        font-family: Poppins
+        font-family: Poppins;
+
     }
+
+
+
 
     li {
         cursor: pointer;
@@ -19,4 +23,5 @@
         @apply rounded-full;
         @apply text-white
     }
+
 }

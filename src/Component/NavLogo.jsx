@@ -5,7 +5,7 @@ function NavbarLogo() {
     <div className='navbar-logo flex items-center cursor-pointer'>
       <img src={logo} alt='logo' className='w-10' />
       <div>
-        <div className='text-2xl '>MM Medical</div>
+        <div className='text-2xl font-bold'>Medical</div>
       </div>
     </div>
   );

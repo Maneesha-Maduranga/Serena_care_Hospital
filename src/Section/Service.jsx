@@ -2,7 +2,7 @@ import ServiceCard from '../Component/ServiceCard';
 
 function Service() {
   return (
-    <div className='mx-auto bg-slate-50 h-screen '>
+    <div className='mx-auto bg-slate-100 h-auto py-5 my-10 ' id='service'>
       <div className='container mx-auto  text-center'>
         <h4 className='font-semibold text-sky-400 text-xl'>Medical</h4>
         <h2 className='text-3xl font-extrabold mt-2'>Our Offered Services</h2>

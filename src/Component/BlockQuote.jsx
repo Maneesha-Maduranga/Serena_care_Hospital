@@ -17,7 +17,7 @@ function BlockQuote() {
             ”
           </div>
         </div>
-        <div className='flex items-center'>
+        <div className='flex items-center justify-center'>
           <div className='mx-2'>
             <div className='rounded-full shadow-lg'>
               <img src={doctor} alt='doctor' className='w-16' />

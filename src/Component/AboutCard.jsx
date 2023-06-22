@@ -9,13 +9,13 @@ function AboutCard({ bgColor }) {
         <img
           src={drug}
           alt='drug'
-          className='-top-3 relative md:-top-6 w-20 border-2 border-current rounded-full transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110'
+          className='top-0 relative md:-top-6 w-20 border-2 border-current rounded-full transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110'
         />
       </div>
       <div className='text-center'>
         <div className='title font-bold'>E-Consultation</div>
 
-        <div className='mx-2'>
+        <div className='text-sm md:text-base'>
           To take trivial example, which undertakes laborious.
         </div>
       </div>
