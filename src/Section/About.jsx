@@ -1,6 +1,8 @@
-import medicalOne from '../assets/medicalOne.png';
-import medicalTwo from '../assets/medicalTwo.png';
-import medicalThree from '../assets/medicalThree.png';
+import imageOne from '../assets/A01.png';
+import imageTwo from '../assets/A02.png';
+import imageThree from '../assets/A03.png';
+import imageFour from '../assets/A04.png';
+
 import BlockQuote from '../Component/BlockQuote';
 import AboutCard from '../Component/AboutCard';
 
@@ -14,7 +16,7 @@ function About() {
           <h1 className='text-3xl font-extrabold mt-2'>
             Mission and Story About Our Medical
           </h1>
-          <p className='mt-4 md:mt-2'>
+          <p className='mt-4 md:mt-2 text-base'>
             At [Hospital Name], we are committed to providing exceptional
             healthcare services to our patients. With state-of-the-art
             facilities, advanced medical technology, and a dedicated team of
@@ -36,17 +38,17 @@ function About() {
         {/* Section Two */}
         <div className='flex flex-col   md:flex-row items-center md:justify-between mt-0'>
           <img
-            src={medicalOne}
+            src={imageOne}
             alt='iconOne'
             className='w-40  transition ease-in-out delay-150  hover:-translate-y-4 duration-300'
           />
           <img
-            src={medicalTwo}
+            src={imageTwo}
             alt='iconTwo'
             className='w-40  transition ease-in-out delay-150  hover:-transalte-y-4 duration-300'
           />
           <img
-            src={medicalThree}
+            src={imageThree}
             alt='iconTwo'
             className='w-40  transition ease-in-out delay-150    hover:-translate-y-4 duration-300'
           />
@@ -54,7 +56,7 @@ function About() {
 
         {/* Section Four */}
         <div className='testimonial'>
-          <BlockQuote />
+          <BlockQuote image={imageFour} name='Dr Scott Windon' />
         </div>
 
         {/* Section Four */}

@@ -2,7 +2,7 @@ import backgroundImage from '../assets/background.jpg';
 
 function Hero() {
   return (
-    <div className='h-screen relative bg-gray-900/40 mt-12' id='home'>
+    <div className='h-auto mt-28 relative bg-gray-900/40 ' id='home'>
       <img
         className='w-full h-full object-cover mix-blend-overlay'
         src={backgroundImage}

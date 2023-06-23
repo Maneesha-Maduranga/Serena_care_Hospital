@@ -3,8 +3,8 @@ import { BsChatLeftText } from 'react-icons/bs';
 
 function ModalCard() {
   return (
-    <div className='h-56  w-60 rounded-lg bg-slate-50 shadow-2xl'>
-      <div className='h-1/4 w-60 bg-sky-400 absolute'>
+    <div className='h-56  w-60 rounded-2xl bg-slate-50 shadow-2xl'>
+      <div className='h-1/4 w-60 bg-sky-400 absolute rounded-t-xl'>
         <img
           src={custService}
           alt='customerService'
@@ -17,7 +17,7 @@ function ModalCard() {
         </h1>
       </div>
 
-      <div className='w-60 h-12 bg-slate-400 absolute  bottom-0 flex justify-center items-center cursor-pointer'>
+      <div className='w-60 h-12 bg-slate-400 absolute  bottom-0 flex justify-center items-center cursor-pointer rounded-b-2xl'>
         <h1 className='text-lg font-semibold'>
           Chat
           <span className='inline-block mx-2 '>
