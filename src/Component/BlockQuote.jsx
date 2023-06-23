@@ -9,9 +9,7 @@ function BlockQuote({ image, name, description }) {
             “
           </div>
           <p className='text-sm font-semibold text-gray-600 text-center px-5'>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
-            obcaecati laudantium recusandae, debitis eum voluptatem ad, illo
-            voluptatibus temporibus odio provident.
+            {description}
           </p>
           <div className='text-3xl text-indigo-500 text-right leading-tight h-3 -mt-3'>
             ”
@@ -19,13 +17,13 @@ function BlockQuote({ image, name, description }) {
         </div>
         <div className='flex items-center justify-center'>
           <div className='mx-2'>
-            <div className='rounded-full shadow-lg'>
-              <img src={image} alt='image' className='w-16' />
+            <div className='shadow-lg rounded-full'>
+              <img src={image} alt='image' className='w-16 rounded-full' />
             </div>
           </div>
           <div>
             <p className='text-md text-indigo-500 font-bold text-center'>
-              Scott Windon
+              {name}
             </p>
           </div>
         </div>

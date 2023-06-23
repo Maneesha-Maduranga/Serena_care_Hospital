@@ -4,7 +4,7 @@ import { IoIosArrowDown } from 'react-icons/io';
 
 import { FaBriefcaseMedical } from 'react-icons/fa';
 
-function ServiceCard() {
+function ServiceCard({ title, description }) {
   return (
     <div className='w-auto h-auto mx-4 my-4 md:w-80 flex flex-col justify-center items-center gap-0  border-2 rounded-b-2xl'>
       <div className='relative'>
@@ -14,12 +14,8 @@ function ServiceCard() {
         </div>
       </div>
       <div className='text-center my-8 flex flex-col items-center gap-2 drop-shadow-2xl'>
-        <h4 className='text-lg font-semibold'>Traumatology</h4>
-        <p className='text-sm '>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-          excepturi ipsum tempora quisquam aliquam delectus, nam laborum ullam
-          voluptatibus asperiores.
-        </p>
+        <h4 className='text-lg font-semibold'>{title}</h4>
+        <p className='text-sm '>{description}</p>
         <IoIosArrowDown size={28} className='hover:-rotate-90' />
       </div>
     </div>

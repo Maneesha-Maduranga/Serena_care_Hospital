@@ -12,7 +12,7 @@ function Modal() {
   return (
     <>
       <div
-        className='fixed bottom-2  right-2 p-4 bg-sky-400  rounded-full cursor-pointer'
+        className='fixed bottom-2  right-2 p-4 bg-sky-400  rounded-full cursor-pointer   '
         onClick={handleToggle}
       >
         {toggle ? (
@@ -21,7 +21,7 @@ function Modal() {
           <AiOutlineCloseCircle size={28} color='white' />
         )}
       </div>
-      <div className='fixed bottom-20 z-10  right-2 p-4'>
+      <div className='fixed bottom-20 z-10  right-2 p-4 '>
         {!toggle && <ModalCard />}
       </div>
     </>

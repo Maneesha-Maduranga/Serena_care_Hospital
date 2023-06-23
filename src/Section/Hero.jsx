@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div className='h-auto mt-28 relative bg-gray-900/40 ' id='home'>
       <img
-        className='w-full h-full object-cover mix-blend-overlay'
+        className='w-full h-screen object-cover mix-blend-overlay'
         src={backgroundImage}
         alt='/'
       />
@@ -15,8 +15,10 @@ function Hero() {
         </h1>
 
         <div className='text-sm md:text-xl  font-medium md:w-[50rem] my-5'>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae sed
-          repellat optio aliquam quod nobis dolorum ipsam at sequi ullam!
+          Welcome to Serene Care Hospital, where compassionate care meets
+          cutting-edge medicine. Our dedicated team of healthcare professionals
+          is committed to providing exceptional medical services to our
+          community.
         </div>
         <button className='bg-sky-400 text-sm hover:bg-sky-300'>
           Our Specailities
