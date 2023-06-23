@@ -5,6 +5,7 @@ import Service from './Section/Service';
 import Portfolio from './Section/Portofolio';
 import Testimonial from './Section/Testimonial';
 import Footer from './Component/Footer';
+import Modal from './Component/Modal';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       </header>
       <main>
         <Hero />
+        <Modal />
         <About />
         <Service />
         <Portfolio />
