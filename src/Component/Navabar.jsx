@@ -59,7 +59,7 @@ function Navbar() {
               offset={-100}
               duration={500}
             >
-              PORTFOLIO
+              FACILITIES
             </Link>
             <Link
               to='testimonial'
@@ -117,7 +117,7 @@ function Navbar() {
               </li>
               <li className=' ml-4 mt-5  text-base font-semibold border-b-2   hover:border-sky-500  hover:text-sky-400'>
                 <Link to='portfolio' smooth={true} offset={-100} duration={500}>
-                  PORTFOLIO
+                  Facilities
                 </Link>
               </li>
               <li className=' ml-4 mt-5  text-base font-semibold border-b-2  hover:border-sky-500  hover:text-sky-400'>
