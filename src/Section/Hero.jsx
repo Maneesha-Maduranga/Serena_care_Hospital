@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 function Hero() {
   return (
-    <div className='h-auto mt-28 relative bg-gray-900/40 ' id='home'>
+    <div className='h-auto mt-28 relative bg-gray-900' id='home'>
       <img
         className='w-full h-screen object-cover mix-blend-overlay'
         src={backgroundImage}
@@ -21,11 +21,11 @@ function Hero() {
             ease: [0, 0.71, 0.2, 1.01],
           }}
         >
-          <h1 className='text-4xl  font-bold  md:text-6xl md:w-[60%]'>
+          <h1 className='text-4xl my-4 font-bold  md:text-6xl md:w-[60%]'>
             Start Up Your Health care
           </h1>
 
-          <div className='text-lg font-semibold text-slate-50  md:text-xl   md:w-[50rem] my-5'>
+          <div className='text-base font-semibold text-slate-50  md:text-xl   md:w-[50rem] my-5'>
             Welcome to Serene Care Hospital, where compassionate care meets
             cutting-edge medicine. Our dedicated team of healthcare
             professionals is committed to providing exceptional medical services
