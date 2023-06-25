@@ -6,7 +6,7 @@ function NavbarLogo() {
       <img src={logo} alt='logo' className='w-10' />
       <div>
         <div className='text-2xl font-bold'>
-          <span className='text-sky-400'>Serene </span> Care Hospital
+          <span className='text-sky-400'>Serene </span>Care
         </div>
       </div>
     </div>
