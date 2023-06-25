@@ -18,7 +18,7 @@ function Navbar() {
     <div className='relative'>
       <div className='fixed top-0 left-0 right-0 z-10 h-auto'>
         <Banner />
-        <section className='flex justify-between items-center h-20 bg-slate-50 w-full drop-shadow-sm z-10 px-14'>
+        <section className='flex justify-between items-center h-20 bg-slate-50 w-full drop-shadow-sm z-10 p-6'>
           {/* Logo */}
 
           <NavbarLogo />
@@ -82,10 +82,7 @@ function Navbar() {
           </ul>
 
           {/* Hamberger ICon */}
-          <div
-            className='absolute top-7 right-5 lg:hidden'
-            onClick={toggleNavbar}
-          >
+          <div className='lg:hidden' onClick={toggleNavbar}>
             {!show ? <BsListNested size={28} /> : <IoClose size={28} />}
           </div>
 
