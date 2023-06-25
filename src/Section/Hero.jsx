@@ -25,7 +25,7 @@ function Hero() {
             Start Up Your Health care
           </h1>
 
-          <div className='text-base md:text-xl  font-medium md:w-[50rem] my-5'>
+          <div className='text-lg  text-slate-50  md:text-xl  font-medium md:w-[50rem] my-5'>
             Welcome to Serene Care Hospital, where compassionate care meets
             cutting-edge medicine. Our dedicated team of healthcare
             professionals is committed to providing exceptional medical services

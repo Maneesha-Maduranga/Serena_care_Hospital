@@ -40,7 +40,7 @@ function Banner() {
       {/* content */}
 
       <div className='flex items-center justify-evenly flex-col md:flex-row gap-2'>
-        <div className='flex gap-3 cursor-pointer'>
+        <div className='flex gap-4 cursor-pointer'>
           <BsFacebook color='white' />
           <BsTwitter color='white' />
           <BsYoutube color='white' />
