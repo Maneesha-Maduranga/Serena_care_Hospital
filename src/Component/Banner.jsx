@@ -39,15 +39,15 @@ function Banner() {
       </div>
       {/* content */}
 
-      <div className='flex items-center justify-evenly flex-col md:flex-row gap-2'>
-        <div className='inline-flex gap-4 flex-row  items-center cursor-pointer my-2'>
+      <div className='flex items-center  justify-evenly flex-col md:flex-row gap-2'>
+        <div className='flex  flex-row gap-8 items-center cursor-pointer p-2'>
           <BsFacebook color='white' />
           <BsTwitter color='white' />
           <BsYoutube color='white' />
           <BsLinkedin color='white' />
           <BsInstagram color='white' />
         </div>
-        <div className='flex flex-row gap-4'>
+        <div className='flex flex-row gap-6'>
           <div className='inline-flex  items-center gap-0 md:gap-1 text-sm flex-col md:flex-row'>
             <span className='inline-block '>
               <BsTelephoneFill />
