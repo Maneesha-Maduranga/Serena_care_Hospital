@@ -21,7 +21,7 @@ function Service() {
           of the services we offer
         </p>
       </div>
-      <div className='cards grid grid-cols-1 gap-1 md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-2'>
+      <div className='cards mx-10 grid grid-cols-1  md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-5'>
         <ServiceCard
           color=' bg-emerald-400'
           image={general}
@@ -53,7 +53,7 @@ function Service() {
           description='We recognize the importance of mental well-being and offer a range of mental health services, including counseling, therapy, and psychiatric consultations. Our compassionate mental health professionals provide support for a wide range of conditions'
         />
         <ServiceCard
-          color='bg-cyan-300'
+          color='bg-orange-300'
           image={lab}
           title='Laboratory Services'
           description='Our fully equipped laboratory performs a comprehensive range of diagnostic tests, including blood tests, urine analysis, microbiology, and pathology. This enables prompt and accurate diagnosis for effective treatment'

@@ -12,7 +12,7 @@ function Modal() {
   return (
     <>
       <div
-        className='fixed bottom-2  right-2 p-4 bg-sky-400  rounded-full cursor-pointer   '
+        className='fixed bottom-2  right-2 p-4 bg-sky-400  rounded-full cursor-pointer z-10   '
         onClick={handleToggle}
       >
         {toggle ? (

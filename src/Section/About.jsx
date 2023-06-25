@@ -61,6 +61,7 @@ function About() {
             alt='iconOne'
             className='w-40  transition ease-in-out delay-150  hover:-translate-y-4 duration-300'
           />
+
           <img
             src={imageTwo}
             alt='iconTwo'

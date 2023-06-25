@@ -1,20 +1,20 @@
+import { useState, useEffect } from 'react';
 import Button from '../Component/Button';
 import PortfolioCard from '../Component/PortfolioCard';
 
-import cafe from '../assets/cafe.jpg';
-import carPark from '../assets/carpark.jpg';
-import carParkTwo from '../assets/carpark02.jpg';
-import general from '../assets/general.jpg';
-import pharmacyOne from '../assets/HospitalPha.jpg';
-import labortary from '../assets/labortary.jpg';
-import laundry from '../assets/laundry.jpg';
-import laxuary from '../assets/laxuary.jpg';
-import mealTwo from '../assets/mealTwo.jpg';
-import meal from '../assets/meal.jpg';
-import pharmacy from '../assets/pharmacy.jpg';
-import genralTwo from '../assets/rooms.jpg';
+import { facilitiesArray } from '../Utills/Facilities';
+import { btn } from '../Utills/Button';
+
+import { motion } from 'framer-motion';
 
 function Facilities() {
+  const [facilities, setFacilities] = useState(facilitiesArray);
+  const [index, setIndex] = useState('');
+
+  const handleClick = (id) => {
+    setIndex(id);
+  };
+
   return (
     <div className='w-full h-auto py-4 my-10' id='portfolio'>
       <div className='head  container mx-auto  text-center'>
@@ -29,28 +29,26 @@ function Facilities() {
         </p>
       </div>
       <div className='btn flex flex-row flex-wrap gap-2 items-center justify-center py-4 mx-auto'>
-        <Button title='Show All' />
-        <Button title='Normal Rooms' />
-        <Button title='Luxary Rooms' />
-        <Button title='Pharmacy' />
-        <Button title='Meals' />
-        <Button title='Cafe' />
-        <Button title='Car Parking' />
-        <Button title='Luandry' />
+        {btn.map((item) => (
+          <div key={item.id}>
+            <Button onClick={() => handleClick(item.id)}>{item.name}</Button>
+          </div>
+        ))}
       </div>
       <div className='card grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-4'>
-        <PortfolioCard image={laxuary} title='Laxary Rooms' />
-        <PortfolioCard image={general} title='Normal Rooms' />
-        <PortfolioCard image={genralTwo} title='Normal Rooms' />
-        <PortfolioCard image={pharmacy} title='Pharmacy' />
-        <PortfolioCard image={pharmacyOne} title='Pharmacy' />
-        <PortfolioCard image={labortary} title='Laboratory' />
-        <PortfolioCard image={cafe} title='Cafe' />
-        <PortfolioCard image={meal} title='Meals' />
-        <PortfolioCard image={mealTwo} title='Meals' />
-        <PortfolioCard image={carPark} title='Car Parking' />
-        <PortfolioCard image={carParkTwo} title='Car Parking' />
-        <PortfolioCard image={laundry} title='Luandry' />
+        {facilities
+          .filter((item) => {
+            if (index == 0) {
+              return item;
+            } else if (item.index == index) {
+              return item;
+            }
+          })
+          .map((item) => (
+            <motion.div layout key={item.id}>
+              <PortfolioCard image={item.img} title={item.title} on />
+            </motion.div>
+          ))}
       </div>
     </div>
   );

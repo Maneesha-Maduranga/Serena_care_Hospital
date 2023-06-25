@@ -6,7 +6,7 @@ function ServiceCard({ image, title, description, color }) {
   return (
     <div className='w-auto h-fit mx-4 my-4 md:w-80 flex flex-col justify-center items-center gap-0  border-2 rounded-b-2xl'>
       <div className='relative'>
-        <img src={image} alt='cardOne' className='w-auto h-auto  md:w-80 ' />
+        <img src={image} alt='cardOne' className='w-auto h-auto  md:w-80' />
         <div
           className={`absolute inset-y-0 left-0 w-20 ${color} opacity-50 hover:hidden`}
         >

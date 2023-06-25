@@ -1,8 +1,11 @@
-function Button({ title }) {
+function Button({ children, onClick }) {
   return (
-    <div className='bg-sky-400 px-4 py-2 rounded-full cursor-pointer'>
+    <div
+      className='bg-sky-400 px-4 py-2 rounded-full cursor-pointer'
+      onClick={onClick}
+    >
       <h6 className='text-sm font-medium text-slate-50  hover:text-black text-center'>
-        {title}
+        {children}
       </h6>
     </div>
   );
