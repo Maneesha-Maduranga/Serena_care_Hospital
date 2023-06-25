@@ -92,7 +92,7 @@ function Navbar() {
             className={
               show
                 ? 'absolute left-0 top-0  bg-slate-50 w-3/4 h-screen ease-in-out duration-500 '
-                : 'ease-in-out duration-500 fixed w-3/4 h-screen left-[-100%] top-10'
+                : 'ease-in-out duration-500 fixed w-3/4 h-screen -left-full top-10'
             }
           >
             <ul className='mx-4 my-4  '>

@@ -28,7 +28,7 @@ function Footer() {
           }}
         />
       </div>
-      <div className='container p-10'>
+      <div className='p-10'>
         <div className='flex  flex-wrap flex-row justify-around gap-10'>
           <div className='mb-6'>
             <h5 className='mb-2.5 text-xl font-bold uppercase text-neutral-800 dark:text-neutral-200'>

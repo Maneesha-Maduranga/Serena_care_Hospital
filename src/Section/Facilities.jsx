@@ -35,7 +35,7 @@ function Facilities() {
       </div>
       <div className='btn flex flex-row flex-wrap gap-2 items-center justify-center py-4 mx-auto'>
         {btn.map((item) => (
-          <div key={item.id}>
+          <div key={item.id} className='m-1'>
             <Button onClick={() => handleClick(item.id)}>{item.name}</Button>
           </div>
         ))}

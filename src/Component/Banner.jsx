@@ -41,27 +41,27 @@ function Banner() {
 
       <div className='flex items-center  justify-evenly flex-col md:flex-row gap-2'>
         <div className='flex  flex-row gap-8 items-center cursor-pointer p-2'>
-          <BsFacebook color='white' />
-          <BsTwitter color='white' />
-          <BsYoutube color='white' />
-          <BsLinkedin color='white' />
-          <BsInstagram color='white' />
+          <BsFacebook color='white' style={{ margin: '0 1px' }} />
+          <BsTwitter color='white' style={{ margin: '0 1px' }} />
+          <BsYoutube color='white' style={{ margin: '0 1px' }} />
+          <BsLinkedin color='white' style={{ margin: '0 1px' }} />
+          <BsInstagram color='white' style={{ margin: '0 1px' }} />
         </div>
         <div className='flex flex-row gap-6'>
-          <div className='inline-flex  items-center gap-0 md:gap-1 text-sm flex-col md:flex-row'>
+          <div className='inline-flex mx-1 items-center gap-0 md:gap-1 text-sm flex-col md:flex-row'>
             <span className='inline-block '>
               <BsTelephoneFill />
             </span>
             +222 555 777
           </div>
-          <div className='inline-flex  items-center gap-0 md:gap-1 text-sm  flex-col md:flex-row'>
+          <div className='inline-flex mx-1 items-center gap-0 md:gap-1 text-sm  flex-col md:flex-row'>
             <span className='inline-block '>
               <BsTelephoneFill />
             </span>
             +222 555 888
           </div>
 
-          <div className='inline-flex  items-center gap-0 md:gap-1 text-sm  flex-col md:flex-row'>
+          <div className='inline-flex mx-1 items-center gap-0 md:gap-1 text-sm  flex-col md:flex-row'>
             <span className='inline-block '>
               <FaAmbulance />
             </span>
