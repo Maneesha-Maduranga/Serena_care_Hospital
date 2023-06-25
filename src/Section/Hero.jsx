@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 function Hero() {
   return (
-    <div className='h-auto mt-28 relative bg-gray-900' id='home'>
+    <div className='h-auto mt-28 relative bg-gray-600' id='home'>
       <img
         className='w-full h-screen object-cover mix-blend-overlay'
         src={backgroundImage}
