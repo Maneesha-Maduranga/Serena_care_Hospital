@@ -8,6 +8,7 @@ import laundry from '../assets/laundry.jpg';
 import laxuaryRoom from '../assets/laxuary.jpg';
 import mealTwo from '../assets/mealTwo.jpg';
 import mealOne from '../assets/meal.jpg';
+import mealThree from '../assets/mealThree.jpg';
 import pharmacyOne from '../assets/pharmacy.jpg';
 import normalRoom from '../assets/rooms.jpg';
 
@@ -59,6 +60,12 @@ export const facilitiesArray = [
     index: 4,
     title: 'Meals',
     img: mealTwo,
+  },
+  {
+    id: 13,
+    index: 4,
+    title: 'Meals',
+    img: mealThree,
   },
   {
     id: 9,

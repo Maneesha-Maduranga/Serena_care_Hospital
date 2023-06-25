@@ -6,10 +6,11 @@ import { facilitiesArray } from '../Utills/Facilities';
 import { btn } from '../Utills/Button';
 
 import { motion } from 'framer-motion';
+import AnimationSection from '../Component/AnimationSection';
 
 function Facilities() {
   const [facilities, setFacilities] = useState(facilitiesArray);
-  const [index, setIndex] = useState('');
+  const [index, setIndex] = useState(0);
 
   const handleClick = (id) => {
     setIndex(id);
@@ -18,15 +19,19 @@ function Facilities() {
   return (
     <div className='w-full h-auto py-4 my-10' id='portfolio'>
       <div className='head  container mx-auto  text-center'>
-        <h4 className='font-semibold text-sky-400 text-xl'>Facilities</h4>
-        <h2 className='text-3xl font-extrabold mt-2'>Our Offered Facilities</h2>
-        <p className='my-4'>
-          At Serene Care Center, we are dedicated to providing a comfortable and
-          nurturing environment for our patients. Our state-of-the-art
-          facilities are designed to meet the diverse needs of individuals
-          seeking healthcare services. Here are some of the exceptional
-          facilities
-        </p>
+        <AnimationSection>
+          <h4 className='font-semibold text-sky-400 text-xl'>Facilities</h4>
+          <h2 className='text-3xl font-extrabold mt-2'>
+            Our Offered Facilities
+          </h2>
+          <p className='my-4'>
+            At Serene Care Center, we are dedicated to providing a comfortable
+            and nurturing environment for our patients. Our state-of-the-art
+            facilities are designed to meet the diverse needs of individuals
+            seeking healthcare services. Here are some of the exceptional
+            facilities
+          </p>
+        </AnimationSection>
       </div>
       <div className='btn flex flex-row flex-wrap gap-2 items-center justify-center py-4 mx-auto'>
         {btn.map((item) => (

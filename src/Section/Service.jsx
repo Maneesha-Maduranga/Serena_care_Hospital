@@ -12,6 +12,7 @@ function Service() {
       <div className='container mx-auto  text-center'>
         <h4 className='font-semibold text-sky-400 text-xl'>Services</h4>
         <h2 className='text-3xl font-extrabold mt-2'>Our Offered Services</h2>
+
         <p className='my-4'>
           At Serene Care Hospital, we are committed to providing a comprehensive
           range of high-quality healthcare services to meet the diverse needs of
@@ -21,6 +22,7 @@ function Service() {
           of the services we offer
         </p>
       </div>
+
       <div className='cards mx-10 grid grid-cols-1  md:grid-cols-2 md:gap-4 lg:grid-cols-3 lg:gap-5'>
         <ServiceCard
           color=' bg-emerald-400'

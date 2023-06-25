@@ -3,6 +3,7 @@ import BlockQuote from '../Component/BlockQuote';
 import imageOne from '../assets/T01.jpg';
 import imageTwo from '../assets/T02.jpg';
 import imageThree from '../assets/T03.jpg';
+import AnimationSection from '../Component/AnimationSection';
 
 function Testimonial() {
   return (
@@ -19,21 +20,26 @@ function Testimonial() {
         </p>
       </div>
       <div className='grid grid-cols-1 gap-2 px-4 my-10 md:grid-cols-3'>
-        <BlockQuote
-          image={imageOne}
-          name='Lucas john'
-          description='The doctors and staff at Serene Care Hospital truly care about their patients " well-being. They made me feel comfortable throughout my entire treatment journey.'
-        />
+        <AnimationSection side='-150'>
+          <BlockQuote
+            image={imageOne}
+            name='Lucas john'
+            description='The doctors and staff at Serene Care Hospital truly care about their patients " well-being. They made me feel comfortable throughout my entire treatment journey.'
+          />
+        </AnimationSection>
+
         <BlockQuote
           image={imageTwo}
           name='Michael S.'
           description='I am grateful for the personalized attention and excellent care I received at Serene Care Hospital. They exceeded my expectations in every way'
         />
-        <BlockQuote
-          image={imageThree}
-          name='Sara D.'
-          description='Dr Scott Windon is a brilliant physician who has consistently exceeded my expectations. His dedication, attentiveness, and willingness to explore innovative solutions have been instrumental in my recovery.'
-        />
+        <AnimationSection side='150'>
+          <BlockQuote
+            image={imageThree}
+            name='Sara D.'
+            description='Dr Scott Windon is a brilliant physician who has consistently exceeded my expectations. His dedication, attentiveness, and willingness to explore innovative solutions have been instrumental in my recovery.'
+          />
+        </AnimationSection>
       </div>
     </div>
   );

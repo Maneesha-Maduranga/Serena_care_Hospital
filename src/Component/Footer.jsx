@@ -36,11 +36,11 @@ function Footer() {
             </h5>
 
             <ul className='mb-0 list-none'>
-              <li className='my-2'>lorme</li>
-              <li className='my-2'>lorme</li>
-              <li className='my-2'>lorme</li>
-              <li className='my-2'>lorme</li>
-              <li className='my-2'>lorme</li>
+              <li className='my-2'>Serene Care Hospital</li>
+
+              <li className='my-2'>123 Main Street</li>
+              <li className='my-2'>Anytown, CA 12345</li>
+              <li className='my-2'>United States</li>
             </ul>
           </div>
           <div className='mb-6'>
@@ -74,19 +74,6 @@ function Footer() {
               <li className='my-2'>
                 Sunday: <span className='float-right mx-3'>Closed</span>
               </li>
-            </ul>
-          </div>
-          <div className='mb-6'>
-            <h5 className='mb-2.5 text-xl font-bold uppercase text-neutral-800 dark:text-neutral-200'>
-              Connect Us
-            </h5>
-
-            <ul className='mb-0 list-none'>
-              <li className='my-2'>lorme</li>
-              <li className='my-2'>lorme</li>
-              <li className='my-2'>lorme</li>
-              <li className='my-2'>lorme</li>
-              <li className='my-2'>lorme</li>
             </ul>
           </div>
         </div>
