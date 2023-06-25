@@ -11,7 +11,7 @@ function ModalCard() {
           className='relative top-8 left-12 w-1/2 mx-2 rounded-full  border-sky-600 border-2'
         />
       </div>
-      <div className='h-fit mt-32 absolute px-1  flex flex-col gap-4 '>
+      <div className='h-fit mt-40 absolute px-1  flex flex-col gap-4 '>
         <h1 className='font-light text-base border-b-2 border-sky-300 '>
           Get Help from Support Team
         </h1>
